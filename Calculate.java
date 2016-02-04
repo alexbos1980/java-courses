@@ -4,16 +4,16 @@ public class Calculate {
 		int first = Integer.valueOf(arg[0]);
 		int second = Integer.valueOf(arg[2]);
 		String operation = arg[1];
-		int resalts = 0;
+		int reasalts = 0;
 		System.out.println("operation is " + operation);
-		if(operation == String.valueOf("+")) { resalts = first + second;
-		System.out.println(first + " " + operation + " " + second + " = "  + resalts);}
-		if(operation == String.valueOf("-")) { resalts = first - second;
-		System.out.println(first + " " + operation + " " + second + " = "  + resalts);}
-		if(operation == String.valueOf("*")) { resalts = first * second;
-		System.out.println(first + " " + operation + " " + second + " = "  + resalts);}
-		if(operation == String.valueOf("/")) { resalts = first / second;
-		System.out.println(first + " " + operation + " " + second + " = "  + resalts);}
-		System.out.println("Nothing work ((");
+		if(operation.equals("+")) { reasalts = first + second;
+		System.out.println(first + " " + operation + " " + second + " = "  + reasalts);}
+		if(operation.equals("-")) { reasalts = first - second;
+		System.out.println(first + " " + operation + " " + second + " = "  + reasalts);}
+		if(operation.equals("*")) { reasalts = first * second;
+		System.out.println(first + " " + operation + " " + second + " = "  + reasalts);}
+		if(operation.equals("/")) { reasalts = first / second;
+		System.out.println(first + " " + operation + " " + second + " = "  + reasalts);}
+		//System.out.println("Nothing work ((");
 	}
 }
